@@ -1,0 +1,20 @@
+.snackbar {
+  width: 200px;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: -100px; /* Start off-screen */
+  margin-left: -120px; /* Center horizontally */
+  border-radius: 0 0 5px 5px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  background-color: #ff6565;
+  text-align: center;
+  color: #fff;
+  transition: top 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.snackbar.active {
+  top: 20px; /* Move into view */
+  opacity: 1;
+}
